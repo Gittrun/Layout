@@ -19,7 +19,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomepageController extends BaseController
 {
-
-
+/**
+     * @return Response
+     * @Route("/", name="homepage_default")
+     */
+    public function default(): Response
+    {
+        return $this->render("Homepage/default.html.twig", array("layoutName" => $this->getParameter("layout").".html.twig"));
+    }
 
 }

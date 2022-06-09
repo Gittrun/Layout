@@ -15,9 +15,10 @@ use Symfony\Component\Form\FormBuilder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use layout\spacelab;
+use layout\startbootstrap-agency-gh-pages;
+use layout\startbootstrap-creative-gh-pages;
 
-class FejfarController extends BaseController
+class CaoController extends BaseController
 {
     /**
      * @return Response
@@ -65,13 +66,13 @@ class FejfarController extends BaseController
 
     /**
      * @return Response
-     * @Route("/spacelab", name="homepage_detail")
+     * @Route("/startbootstrap-agency-gh-pages", name="homepage_detail")
      */
-    public function spacelab(): Response
+    public function agency(): Response
     {
 
-        // preda data do sablonyspacelab
-        return $this->render("Homepage/default.html.twig");
+       
+        return $this->render("templates/Agency.html.twig");
         return $this->setLayout("index.html");
 
     }
