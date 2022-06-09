@@ -70,8 +70,8 @@ class FejfarController extends BaseController
     public function spacelab(): Response
     {
 
-        // preda data do sablony
-        return $this->render("Homepage/spacelab.html.twig");
+        // preda data do sablonyspacelab
+        return $this->render("Homepage/default.html.twig");
         return $this->setLayout("index.html");
 
     }
